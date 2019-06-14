@@ -1,23 +1,24 @@
 //----------------Back End Logic -----------//
-function numberToOutput(input) {
+function numberToOutput(number) {
   var result = [];
-  for (var i = 1; i <= input; i++) {
+  for (var i = 1; i <= number; i++) {
 
-  //   if (i % 3 == 0) {
-  //     result.push("I'm sorry, Dave. I'm afraid I can't do that.");
-  //   }
-  //   else if (i.toString().match(/0/)) {
-  //     result.push("Beep!")
-  //   }
-  //   else if (i.toString().match(/1/)) {
-  //     result.push("Boop!")
-  //   }else {
-  //    result.push(i)
-  //   }
-  // }
-  // return result;
+
+    if (i.toString().match(/0/)) {
+        result.push("Beep!")
+    }
+    else if (i.toString().match(/1/)) {
+      result.push("Boop!")
+    }
+    else if (i % 3 === 0) {
+      result.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    }else {
+     result.push(i)
+    }
+  }
+  return result;
 }
-}
+
 
 //------------- Front End Logic ---------//
 $(document).ready(function() {
