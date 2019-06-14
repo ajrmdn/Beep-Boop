@@ -3,7 +3,15 @@ function numberToOutput(string) {
   for (var i = 1; i <= input; i++) {
 
     if (i % 3 == 0) {
-      results.push
+      result.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    }
+    else if (i.toString().match(/0/)) {
+      result.push("Beep!")
+    }
+    else if (i.toString().match(/1/)) {
+      result.push("Boop!")
+    }else {
+     result.push(i)
     }
   }
 }
@@ -11,15 +19,9 @@ function numberToOutput(string) {
 //------------- Front End Logic ---------//
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-   event.preventDefault();
+    event.preventDefault();
    var number = parseInt($("input#number").val());
    var result = numberToOutput(string);
    $("#result").text(result);
  });
 });
-
-
-  // $(".btn").click(function() {
-  //   var userInputs = [];
-  //   userInputs = ($("#number").val());
-  //   }
