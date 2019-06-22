@@ -10,9 +10,9 @@ function numberToOutput(number) {
     else if (i.toString().match(/2/)) {
       result.push("Boop!")
     }
-    else if (i % 3 === 3) {
+    else if (i % 3 === 0) {
       result.push("I'm sorry, Dave. I'm afraid I can't do that.");
-    }else {
+    } else {
      result.push(i)
     }
   }
@@ -27,5 +27,7 @@ $(document).ready(function() {
    var number = parseInt($("#number").val());
    var result = numberToOutput(number);
    $("#result").text(result);
+
+   
  });
 });
