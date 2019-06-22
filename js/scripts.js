@@ -27,7 +27,5 @@ $(document).ready(function() {
    var number = parseInt($("#number").val());
    var result = numberToOutput(number);
    $("#result").text(result);
-
-   
  });
 });
