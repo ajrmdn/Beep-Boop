@@ -5,19 +5,20 @@ function numberToOutput(number) {
 
 
     if (i.toString().match(/1/)) {
-        result.push("Beep!")
-    }
-    else if (i.toString().match(/2/)) {
-      result.push("Boop!")
-    }
-    else if (i % 3 === 0) {
-      result.push("I'm sorry, Dave. I'm afraid I can't do that.");
-    } else {
+       result.push("Beep!")
+   } else if (i.toString().match(0)) {
      result.push(i)
-    }
-  }
-  return result;
+  }  else if (i.toString().match(/2/)) {
+     result.push("Boop!")
+   } else if (i % 3 === 0) {
+     result.push("I'm sorry, Dave. I'm afraid I can't do that.");
+   } else {
+    result.push(i)
+   }
+ }
+ return result;
 }
+
 
 
 //------------- Front End Logic ---------//
